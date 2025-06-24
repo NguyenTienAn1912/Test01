@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Selenium_WebdriverTest {
+public class SeleniumWebdriverTest {
     private WebDriver webDriver;
 
     @BeforeEach

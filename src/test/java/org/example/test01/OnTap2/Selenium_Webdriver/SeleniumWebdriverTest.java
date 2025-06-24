@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SeleniumWebdriverTest {
     private WebDriver webDriver;
@@ -13,7 +14,16 @@ public class SeleniumWebdriverTest {
     @BeforeEach
     void setup(){
         WebDriverManager.chromedriver().setup();
-        webDriver = new ChromeDriver();
+
+        ChromeOptions options = new ChromeOptions();
+
+        // ✅ Thêm các cấu hình này để tránh lỗi trên CI
+        options.addArguments("--headless=new");         // hoặc "--headless" nếu Chrome cũ
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage"); // fix lỗi crash trong môi trường container
+
+        webDriver = new ChromeDriver(options);
     }
     @Test
     void testSteps() throws InterruptedException {

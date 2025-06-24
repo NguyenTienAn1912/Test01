@@ -1,6 +1,6 @@
-package org.example.test01.service;
+package org.example.test01.OnTap1.service;
 
-import org.example.test01.entity.SinhVien;
+import org.example.test01.OnTap1.entity.SinhVien;
 
 import java.util.ArrayList;
 import java.util.List;

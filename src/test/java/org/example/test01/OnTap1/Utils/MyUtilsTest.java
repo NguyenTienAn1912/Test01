@@ -1,5 +1,6 @@
-package org.example.test01.Utils;
+package org.example.test01.OnTap1.Utils;
 
+import org.example.test01.OnTap1.Utils.MyUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

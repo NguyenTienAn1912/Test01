@@ -1,6 +1,7 @@
-package org.example.test01.service;
+package org.example.test01.OnTap1.service;
 
-import org.example.test01.entity.SinhVien;
+import org.example.test01.OnTap1.entity.SinhVien;
+import org.example.test01.OnTap1.service.SinhVienService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

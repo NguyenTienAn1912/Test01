@@ -1,4 +1,4 @@
-package org.example.test01.entity;
+package org.example.test01.OnTap1.entity;
 
 public class SinhVien {
     private Long id;
